@@ -16,6 +16,7 @@ import java.util.concurrent.Executor;
 public class DemoApplication {
 
     public static void main(String[] args) {
+        // implicitly call .close()
         SpringApplication.run(DemoApplication.class, args).close();
     }
 
